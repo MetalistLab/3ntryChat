@@ -1,7 +1,7 @@
 
 # ENCRYPTED CHAT
 
-## 1.Getting started
+## 1.Getting Started
 
 ### 1.1 Installation
 ```
@@ -13,7 +13,7 @@ $ yarn
 ```
 install all dependencies we need.
 
-### 1.2 Set env
+### 1.2 Set ENV
 
 rename .env.sample to .env, and set the value below.
 ```
@@ -50,10 +50,10 @@ complete, contract deployed, address: CONTRACT_INSTANCE_ADDRESS
 ```
 
 
-## 2.Contract introduction
+## 2. Contract Introduction
 
 ### 2.1 Architecture
-![avatar](./asset/architecture.png)
+![avatar](./asset/architectureContract.png)
 
 ### 2.2 Overview
 Encrypted chat protocol allows people to communicate with others without central server, all message are stored on the chain and only the communicating parties can parse the messages.
@@ -74,7 +74,7 @@ the contract that implement IMessage, define the handler logic for message proce
 |------ | ------ | -----
 | chat | Aurora | 0x926F2AEAaae27006cb5a663B6E6FD28c9E3F186C
 
-## 3.Main functions introduction
+## 3.Main Functions Introduction
 
 ### 3.1 chat
 #### 1、 function register(PubKeyPoint calldata pk) external
@@ -111,4 +111,31 @@ Explanation: Obtain the message list of both parties in a batch.
 Explanation: Obtain the message list of both parties.
 
 #### 12、function canSendMessageTo(address sender, address receiver) external view returns (bool)
-Explanation: Query whether the sender can send messages to the receiver. 
+Explanation: Query whether the sender can send messages to the receiver.
+
+
+## 4. 3ntryChat APP
+
+### 4.1 APK File Installation Guide
+1. Download the APK file
+2. Locate the file in file manager
+3. Install and launch the application on your home screen
+
+### 4.2 Application Features
+#### 4.2.1 Chat Message Encryption
+Generates an encryption string using the public key of the contact's wallet and the private key of the user's wallet.
+
+Uses the generated string as a key to encrypt chat content via AES encryption.
+
+#### 4.2.2 Cross-terminal Access to Chat History
+The same account can retrieve chat history on different devices by fetching on-chain data.
+
+### 4.3 Architecture
+
+![avatar](./asset/architectureAPK.png)
+
+ChatModule: Forms a chat when sending a message to a contact and receives the latest messages/new chats. 
+
+MessageModule: Receives, sends, and stores messages. 
+
+PendingMessageModule: Sends pending messages to the blockchain.
