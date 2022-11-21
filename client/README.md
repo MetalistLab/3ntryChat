@@ -1,8 +1,9 @@
+
 # 3ntryChat APP
 
 ## APK File Installation Guide
 
-1. Download the APK file
+1. Download the APK file: https://github.com/MetalistLab/3ntryChat/raw/main/client/3ntryChat_2022-11-17_19-58_release_35.apk
 
 2. Locate the file in file manager
 
