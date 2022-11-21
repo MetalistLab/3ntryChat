@@ -3,12 +3,13 @@
 
 ### 1. How to view our work
 View our vedio: https://youtu.be/fnuvkmbUS0s
+
 Download our andriod APP: https://github.com/MetalistLab/3ntryChat/raw/main/client/3ntryChat_2022-11-17_19-58_release_35.apk
 
 View our code: 
 1) Client: https://github.com/MetalistLab/3ntryChat/tree/main/client  
-2) Contract: https://github.com/MetalistLab/3ntryChat/tree/main/contract
-Contract address on Aurora network: 0x926F2AEAaae27006cb5a663B6E6FD28c9E3F186C
+2) Contract: https://github.com/MetalistLab/3ntryChat/tree/main/contract<br>
+Contract address on Aurora network: **0x926F2AEAaae27006cb5a663B6E6FD28c9E3F186C**
 
 ### 2. Technological Implementation
 Encrypted chat protocol deploy on NEAR Aurora Testnet, it allows people to communicate with others without central server, all messages are stored on the chain forever, and only the communicating parties can parse the messages. Quick message sending and receiving can demonstrate the high performance of NEAR. 
