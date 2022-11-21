@@ -22,7 +22,7 @@ The same account can retrieve chat history on different devices by fetching on-c
 
 ## Architecture
 
-![iShot_2022-11-17_11.17.36](/Users/guoxiaodong/Desktop/iShot_2022-11-17_11.17.36.png)
+![iShot_2022-11-17_11.17.36](https://github.com/MetalistLab/3ntryChat/blob/main/client/2022-11-17_11.17.36.png)
 
 ChatModule: Forms a chat when sending a message to a contact and receives the latest messages/new chats.
 
