@@ -1,5 +1,5 @@
 
-# 3ntryChat Contract
+# Encrypted chat protocol
 
 ## 1.Getting Started
 
